@@ -1,12 +1,11 @@
 %h1 New Post
 
 
-.contents.row
-  .container
+.form__container
+  .form__container__field
     = form_with(model: @post, local: true) do |form|
-      %h3
-        投稿する
-      = form.file_field	 :video, placeholder: ""
+
+      = form.file_field	 :video, placeholder: "ファイルを選択する"
       = form.text_field :title, placeholder: "title"
-      = form.text_area :text, placeholder: "text" , rows: "10"
+      = form.text_area :text, placeholder: "text"
       = form.submit "SEND"

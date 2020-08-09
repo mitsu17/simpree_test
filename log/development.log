@@ -850,3 +850,215 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 104ms (Views: 102.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2020-08-09 12:04:12 +0900
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ vendor/bundle/ruby/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  Rendered posts/index.html.haml within layouts/application (364.8ms)
+Completed 200 OK in 428ms (Views: 414.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2020-08-09 12:04:23 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.haml within layouts/application
+  Rendered posts/new.html.haml within layouts/application (15.5ms)
+Completed 200 OK in 67ms (Views: 66.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/new" for ::1 at 2020-08-09 12:04:47 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/posts/new"):
+  
+vendor/bundle/ruby/2.6.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.6.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.6.0/gems/railties-5.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.6.0/gems/railties-5.2.3/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.6.0/gems/activesupport-5.2.3/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.6.0/gems/activesupport-5.2.3/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.6.0/gems/activesupport-5.2.3/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.6.0/gems/railties-5.2.3/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.6.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.6.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.6.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.6.0/gems/activesupport-5.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.6.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.6.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+vendor/bundle/ruby/2.6.0/gems/railties-5.2.3/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/posts/new" for ::1 at 2020-08-09 12:06:29 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/posts/new"):
+  
+vendor/bundle/ruby/2.6.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.6.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.6.0/gems/railties-5.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.6.0/gems/railties-5.2.3/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.6.0/gems/activesupport-5.2.3/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.6.0/gems/activesupport-5.2.3/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.6.0/gems/activesupport-5.2.3/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.6.0/gems/railties-5.2.3/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.6.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.6.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.6.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.6.0/gems/activesupport-5.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.6.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.6.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+vendor/bundle/ruby/2.6.0/gems/railties-5.2.3/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/posts/new" for ::1 at 2020-08-09 12:06:35 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/posts/new"):
+  
+vendor/bundle/ruby/2.6.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.6.0/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.6.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.6.0/gems/railties-5.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.6.0/gems/railties-5.2.3/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.6.0/gems/activesupport-5.2.3/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.6.0/gems/activesupport-5.2.3/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.6.0/gems/activesupport-5.2.3/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.6.0/gems/railties-5.2.3/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.6.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.6.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.6.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.6.0/gems/activesupport-5.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.6.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.6.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+vendor/bundle/ruby/2.6.0/gems/railties-5.2.3/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-08-09 12:06:53 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ vendor/bundle/ruby/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  Rendered posts/index.html.haml within layouts/application (292.2ms)
+Completed 200 OK in 357ms (Views: 342.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2020-08-09 12:07:08 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.haml within layouts/application
+  Rendered posts/new.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 61ms (Views: 19.4ms | ActiveRecord: 35.4ms)
+
+
+Started POST "/posts" for ::1 at 2020-08-09 12:07:29 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C31BmGiP3dsEfcYrcD3wJLsjXYIBfoeaKy9SQBnWlw4aO/jziGkJqDoG6WVHej1CzAAZ3tD0TeXz6oZGyH52hg==", "post"=>{"video"=>#<ActionDispatch::Http::UploadedFile:0x00007f9bdcd49d18 @tempfile=#<Tempfile:/var/folders/zk/v75d82qx2pbbnf7lmgynh_d00000gn/T/RackMultipart20200809-1925-c3inzb.mov>, @original_filename="画面収録 2020-08-09 11.43.43.mov", @content_type="video/quicktime", @headers="Content-Disposition: form-data; name=\"post[video]\"; filename=\"\xE7\x94\xBB\xE9\x9D\xA2\xE5\x8F\x8E\xE9\x8C\xB2 2020-08-09 11.43.43.mov\"\r\nContent-Type: video/quicktime\r\n">, "title"=>"本日も晴天なり", "text"=>"テスト"}, "commit"=>"SEND"}
+[36m  Disk Storage (46.3ms) [0m[32mUploaded file to key: N4zKzWMaEPQXAUgYXgeQWt6y (checksum: 8W48NYdxrybvb19cvJMEtg==)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:12
+  [1m[36mActiveStorage::Blob Create (3.9ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "N4zKzWMaEPQXAUgYXgeQWt6y"], ["filename", "画面収録 2020-08-09 11.43.43.mov"], ["content_type", "video/quicktime"], ["metadata", "{\"identified\":true}"], ["byte_size", 11012530], ["checksum", "8W48NYdxrybvb19cvJMEtg=="], ["created_at", "2020-08-09 03:07:30.053406"]]
+  ↳ app/controllers/posts_controller.rb:12
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:12
+  [1m[36mPost Create (7.6ms)[0m  [1m[32mINSERT INTO "posts" ("title", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "本日も晴天なり"], ["text", "テスト"], ["created_at", "2020-08-09 03:07:30.084898"], ["updated_at", "2020-08-09 03:07:30.084898"]]
+  ↳ app/controllers/posts_controller.rb:12
+  [1m[36mActiveStorage::Attachment Create (15.9ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "video"], ["record_type", "Post"], ["record_id", 1], ["blob_id", 1], ["created_at", "2020-08-09 03:07:30.094589"]]
+  ↳ app/controllers/posts_controller.rb:12
+  [1m[36mPost Update (0.6ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = $1 WHERE "posts"."id" = $2[0m  [["updated_at", "2020-08-09 03:07:30.112203"], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:12
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:12
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: e324ffa6-dc08-4762-a8e0-3cb5f03c37ea) to Async(default) with arguments: #<GlobalID:0x00007f9be15d3a48 @uri=#<URI::GID gid://simpree/ActiveStorage::Blob/1>>
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 322ms (ActiveRecord: 55.4ms)
+
+
+Started GET "/posts/1" for ::1 at 2020-08-09 12:07:30 +0900
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/show.html.haml within layouts/application
+  [1m[36mActiveStorage::Blob Load (2.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ vendor/bundle/ruby/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e324ffa6-dc08-4762-a8e0-3cb5f03c37ea] Performing ActiveStorage::AnalyzeJob (Job ID: e324ffa6-dc08-4762-a8e0-3cb5f03c37ea) from Async(default) with arguments: #<GlobalID:0x00007f9be15f5dc8 @uri=#<URI::GID gid://simpree/ActiveStorage::Blob/1>>
+  [1m[36mActiveStorage::Attachment Load (15.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Post"], ["name", "video"], ["LIMIT", 1]]
+  ↳ app/views/posts/show.html.haml:1
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/show.html.haml:1
+  Rendered posts/show.html.haml within layouts/application (29.7ms)
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e324ffa6-dc08-4762-a8e0-3cb5f03c37ea] [36m  Disk Storage (16.2ms) [0m[34mDownloaded file from key: N4zKzWMaEPQXAUgYXgeQWt6y[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e324ffa6-dc08-4762-a8e0-3cb5f03c37ea] Skipping video analysis because ffmpeg isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e324ffa6-dc08-4762-a8e0-3cb5f03c37ea]   [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e324ffa6-dc08-4762-a8e0-3cb5f03c37ea]   ↳ vendor/bundle/ruby/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e324ffa6-dc08-4762-a8e0-3cb5f03c37ea]   [1m[36mActiveStorage::Blob Update (0.7ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e324ffa6-dc08-4762-a8e0-3cb5f03c37ea]   ↳ vendor/bundle/ruby/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e324ffa6-dc08-4762-a8e0-3cb5f03c37ea]   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e324ffa6-dc08-4762-a8e0-3cb5f03c37ea]   ↳ vendor/bundle/ruby/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e324ffa6-dc08-4762-a8e0-3cb5f03c37ea] Performed ActiveStorage::AnalyzeJob (Job ID: e324ffa6-dc08-4762-a8e0-3cb5f03c37ea) from Async(default) in 47.19ms
+Completed 200 OK in 71ms (Views: 49.1ms | ActiveRecord: 16.5ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9facc38c55eb02d78e93a8fa8a38a1af835da27a/%E7%94%BB%E9%9D%A2%E5%8F%8E%E9%8C%B2%202020-08-09%2011.43.43.mov" for ::1 at 2020-08-09 12:07:30 +0900
+Processing by ActiveStorage::BlobsController#show as 
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9facc38c55eb02d78e93a8fa8a38a1af835da27a", "filename"=>"画面収録 2020-08-09 11.43.43"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ vendor/bundle/ruby/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (1.1ms) [0m[34mGenerated URL for file at key: N4zKzWMaEPQXAUgYXgeQWt6y (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRUalI2UzNwWFRXRkZVRkZZUVZWbldWaG5aVkZYZERaNUJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJqbUYwZEdGamFHMWxiblE3SUdacGJHVnVZVzFsUFNJbE0wWWxNMFlsTTBZbE0wWWdNakF5TUMwd09DMHdPU0F4TVM0ME15NDBNeTV0YjNZaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkp5VkZOeVU1TkNWQ1FpVkZPU1U1UkNWQk1pVkZOU1U0UmlVNFJTVkZPU1U0UXlWQ01pVXlNREl3TWpBdE1EZ3RNRGtsTWpBeE1TNDBNeTQwTXk1dGIzWUdPd1pHT2hGamIyNTBaVzUwWDNSNWNHVkpJaFIyYVdSbGJ5OXhkV2xqYTNScGJXVUdPd1pVIiwiZXhwIjoiMjAyMC0wOC0wOVQwMzoxMjozMC4zMzJaIiwicHVyIjoiYmxvYl9rZXkifX0=--999fa672f2f7bdc03d2aa0b14257fc680caa2e90/%E7%94%BB%E9%9D%A2%E5%8F%8E%E9%8C%B2%202020-08-09%2011.43.43.mov?content_type=video%2Fquicktime&disposition=attachment%3B+filename%3D%22%253F%253F%253F%253F+2020-08-09+11.43.43.mov%22%3B+filename%2A%3DUTF-8%27%27%25E7%2594%25BB%25E9%259D%25A2%25E5%258F%258E%25E9%258C%25B2%25202020-08-09%252011.43.43.mov)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRUalI2UzNwWFRXRkZVRkZZUVZWbldWaG5aVkZYZERaNUJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJqbUYwZEdGamFHMWxiblE3SUdacGJHVnVZVzFsUFNJbE0wWWxNMFlsTTBZbE0wWWdNakF5TUMwd09DMHdPU0F4TVM0ME15NDBNeTV0YjNZaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkp5VkZOeVU1TkNWQ1FpVkZPU1U1UkNWQk1pVkZOU1U0UmlVNFJTVkZPU1U0UXlWQ01pVXlNREl3TWpBdE1EZ3RNRGtsTWpBeE1TNDBNeTQwTXk1dGIzWUdPd1pHT2hGamIyNTBaVzUwWDNSNWNHVkpJaFIyYVdSbGJ5OXhkV2xqYTNScGJXVUdPd1pVIiwiZXhwIjoiMjAyMC0wOC0wOVQwMzoxMjozMC4zMzJaIiwicHVyIjoiYmxvYl9rZXkifX0=--999fa672f2f7bdc03d2aa0b14257fc680caa2e90/%E7%94%BB%E9%9D%A2%E5%8F%8E%E9%8C%B2%202020-08-09%2011.43.43.mov?content_type=video%2Fquicktime&disposition=attachment%3B+filename%3D%22%253F%253F%253F%253F+2020-08-09+11.43.43.mov%22%3B+filename%2A%3DUTF-8%27%27%25E7%2594%25BB%25E9%259D%25A2%25E5%258F%258E%25E9%258C%25B2%25202020-08-09%252011.43.43.mov
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRUalI2UzNwWFRXRkZVRkZZUVZWbldWaG5aVkZYZERaNUJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJqbUYwZEdGamFHMWxiblE3SUdacGJHVnVZVzFsUFNJbE0wWWxNMFlsTTBZbE0wWWdNakF5TUMwd09DMHdPU0F4TVM0ME15NDBNeTV0YjNZaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkp5VkZOeVU1TkNWQ1FpVkZPU1U1UkNWQk1pVkZOU1U0UmlVNFJTVkZPU1U0UXlWQ01pVXlNREl3TWpBdE1EZ3RNRGtsTWpBeE1TNDBNeTQwTXk1dGIzWUdPd1pHT2hGamIyNTBaVzUwWDNSNWNHVkpJaFIyYVdSbGJ5OXhkV2xqYTNScGJXVUdPd1pVIiwiZXhwIjoiMjAyMC0wOC0wOVQwMzoxMjozMC4zMzJaIiwicHVyIjoiYmxvYl9rZXkifX0=--999fa672f2f7bdc03d2aa0b14257fc680caa2e90/%E7%94%BB%E9%9D%A2%E5%8F%8E%E9%8C%B2%202020-08-09%2011.43.43.mov?content_type=video%2Fquicktime&disposition=attachment%3B+filename%3D%22%253F%253F%253F%253F+2020-08-09+11.43.43.mov%22%3B+filename%2A%3DUTF-8%27%27%25E7%2594%25BB%25E9%259D%25A2%25E5%258F%258E%25E9%258C%25B2%25202020-08-09%252011.43.43.mov" for ::1 at 2020-08-09 12:07:30 +0900
+Processing by ActiveStorage::DiskController#show as 
+  Parameters: {"content_type"=>"video/quicktime", "disposition"=>"attachment; filename=\"%3F%3F%3F%3F 2020-08-09 11.43.43.mov\"; filename*=UTF-8''%E7%94%BB%E9%9D%A2%E5%8F%8E%E9%8C%B2%202020-08-09%2011.43.43.mov", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRUalI2UzNwWFRXRkZVRkZZUVZWbldWaG5aVkZYZERaNUJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJqbUYwZEdGamFHMWxiblE3SUdacGJHVnVZVzFsUFNJbE0wWWxNMFlsTTBZbE0wWWdNakF5TUMwd09DMHdPU0F4TVM0ME15NDBNeTV0YjNZaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkp5VkZOeVU1TkNWQ1FpVkZPU1U1UkNWQk1pVkZOU1U0UmlVNFJTVkZPU1U0UXlWQ01pVXlNREl3TWpBdE1EZ3RNRGtsTWpBeE1TNDBNeTQwTXk1dGIzWUdPd1pHT2hGamIyNTBaVzUwWDNSNWNHVkpJaFIyYVdSbGJ5OXhkV2xqYTNScGJXVUdPd1pVIiwiZXhwIjoiMjAyMC0wOC0wOVQwMzoxMjozMC4zMzJaIiwicHVyIjoiYmxvYl9rZXkifX0=--999fa672f2f7bdc03d2aa0b14257fc680caa2e90", "filename"=>"画面収録 2020-08-09 11.43.43"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9facc38c55eb02d78e93a8fa8a38a1af835da27a/%E7%94%BB%E9%9D%A2%E5%8F%8E%E9%8C%B2%202020-08-09%2011.43.43.mov" for ::1 at 2020-08-09 12:07:39 +0900
+Processing by ActiveStorage::BlobsController#show as 
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9facc38c55eb02d78e93a8fa8a38a1af835da27a", "filename"=>"画面収録 2020-08-09 11.43.43"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ vendor/bundle/ruby/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: N4zKzWMaEPQXAUgYXgeQWt6y (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRUalI2UzNwWFRXRkZVRkZZUVZWbldWaG5aVkZYZERaNUJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJqbUYwZEdGamFHMWxiblE3SUdacGJHVnVZVzFsUFNJbE0wWWxNMFlsTTBZbE0wWWdNakF5TUMwd09DMHdPU0F4TVM0ME15NDBNeTV0YjNZaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkp5VkZOeVU1TkNWQ1FpVkZPU1U1UkNWQk1pVkZOU1U0UmlVNFJTVkZPU1U0UXlWQ01pVXlNREl3TWpBdE1EZ3RNRGtsTWpBeE1TNDBNeTQwTXk1dGIzWUdPd1pHT2hGamIyNTBaVzUwWDNSNWNHVkpJaFIyYVdSbGJ5OXhkV2xqYTNScGJXVUdPd1pVIiwiZXhwIjoiMjAyMC0wOC0wOVQwMzoxMjozOS4zNDBaIiwicHVyIjoiYmxvYl9rZXkifX0=--ed5a74c7f4694db440dc433e70a4867ee04f06fe/%E7%94%BB%E9%9D%A2%E5%8F%8E%E9%8C%B2%202020-08-09%2011.43.43.mov?content_type=video%2Fquicktime&disposition=attachment%3B+filename%3D%22%253F%253F%253F%253F+2020-08-09+11.43.43.mov%22%3B+filename%2A%3DUTF-8%27%27%25E7%2594%25BB%25E9%259D%25A2%25E5%258F%258E%25E9%258C%25B2%25202020-08-09%252011.43.43.mov)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRUalI2UzNwWFRXRkZVRkZZUVZWbldWaG5aVkZYZERaNUJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJqbUYwZEdGamFHMWxiblE3SUdacGJHVnVZVzFsUFNJbE0wWWxNMFlsTTBZbE0wWWdNakF5TUMwd09DMHdPU0F4TVM0ME15NDBNeTV0YjNZaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkp5VkZOeVU1TkNWQ1FpVkZPU1U1UkNWQk1pVkZOU1U0UmlVNFJTVkZPU1U0UXlWQ01pVXlNREl3TWpBdE1EZ3RNRGtsTWpBeE1TNDBNeTQwTXk1dGIzWUdPd1pHT2hGamIyNTBaVzUwWDNSNWNHVkpJaFIyYVdSbGJ5OXhkV2xqYTNScGJXVUdPd1pVIiwiZXhwIjoiMjAyMC0wOC0wOVQwMzoxMjozOS4zNDBaIiwicHVyIjoiYmxvYl9rZXkifX0=--ed5a74c7f4694db440dc433e70a4867ee04f06fe/%E7%94%BB%E9%9D%A2%E5%8F%8E%E9%8C%B2%202020-08-09%2011.43.43.mov?content_type=video%2Fquicktime&disposition=attachment%3B+filename%3D%22%253F%253F%253F%253F+2020-08-09+11.43.43.mov%22%3B+filename%2A%3DUTF-8%27%27%25E7%2594%25BB%25E9%259D%25A2%25E5%258F%258E%25E9%258C%25B2%25202020-08-09%252011.43.43.mov
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRUalI2UzNwWFRXRkZVRkZZUVZWbldWaG5aVkZYZERaNUJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJqbUYwZEdGamFHMWxiblE3SUdacGJHVnVZVzFsUFNJbE0wWWxNMFlsTTBZbE0wWWdNakF5TUMwd09DMHdPU0F4TVM0ME15NDBNeTV0YjNZaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkp5VkZOeVU1TkNWQ1FpVkZPU1U1UkNWQk1pVkZOU1U0UmlVNFJTVkZPU1U0UXlWQ01pVXlNREl3TWpBdE1EZ3RNRGtsTWpBeE1TNDBNeTQwTXk1dGIzWUdPd1pHT2hGamIyNTBaVzUwWDNSNWNHVkpJaFIyYVdSbGJ5OXhkV2xqYTNScGJXVUdPd1pVIiwiZXhwIjoiMjAyMC0wOC0wOVQwMzoxMjozOS4zNDBaIiwicHVyIjoiYmxvYl9rZXkifX0=--ed5a74c7f4694db440dc433e70a4867ee04f06fe/%E7%94%BB%E9%9D%A2%E5%8F%8E%E9%8C%B2%202020-08-09%2011.43.43.mov?content_type=video%2Fquicktime&disposition=attachment%3B+filename%3D%22%253F%253F%253F%253F+2020-08-09+11.43.43.mov%22%3B+filename%2A%3DUTF-8%27%27%25E7%2594%25BB%25E9%259D%25A2%25E5%258F%258E%25E9%258C%25B2%25202020-08-09%252011.43.43.mov" for ::1 at 2020-08-09 12:07:39 +0900
+Processing by ActiveStorage::DiskController#show as 
+  Parameters: {"content_type"=>"video/quicktime", "disposition"=>"attachment; filename=\"%3F%3F%3F%3F 2020-08-09 11.43.43.mov\"; filename*=UTF-8''%E7%94%BB%E9%9D%A2%E5%8F%8E%E9%8C%B2%202020-08-09%2011.43.43.mov", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRUalI2UzNwWFRXRkZVRkZZUVZWbldWaG5aVkZYZERaNUJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJqbUYwZEdGamFHMWxiblE3SUdacGJHVnVZVzFsUFNJbE0wWWxNMFlsTTBZbE0wWWdNakF5TUMwd09DMHdPU0F4TVM0ME15NDBNeTV0YjNZaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkp5VkZOeVU1TkNWQ1FpVkZPU1U1UkNWQk1pVkZOU1U0UmlVNFJTVkZPU1U0UXlWQ01pVXlNREl3TWpBdE1EZ3RNRGtsTWpBeE1TNDBNeTQwTXk1dGIzWUdPd1pHT2hGamIyNTBaVzUwWDNSNWNHVkpJaFIyYVdSbGJ5OXhkV2xqYTNScGJXVUdPd1pVIiwiZXhwIjoiMjAyMC0wOC0wOVQwMzoxMjozOS4zNDBaIiwicHVyIjoiYmxvYl9rZXkifX0=--ed5a74c7f4694db440dc433e70a4867ee04f06fe", "filename"=>"画面収録 2020-08-09 11.43.43"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+

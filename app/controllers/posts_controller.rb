@@ -4,39 +4,29 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
 
-  def show
-  end
-
-  def new
+  def new 
     @post = Post.new
   end
 
   def create
-    Post.create(post_params)
+    @post = Post.create params.require(:post).permit(:video, :title, :text) # POINT
+    redirect_to @post
   end
 
-
-  # def create
-  #   @post = post.new(post_params)
-
-  #   respond_to do |format|
-  #     if @post.save
-  #       format.html { redirect_to @post, notice: 'Movie was successfully created.' }
-  #       # format.json { render :show, status: :created, location: @movie }
-  #     else
-  #       format.html { render :new }
-  #       # format.json { render json: @post.errors, status: :unprocessable_entity }
-  #     end
-  #   end
-  # end
-
-
-  private
-  def post_params
-    params.permit(:video, :title, :text)
+  def show
+    @post = Post.find(params[:id])
   end
 
+  def edit
+    @post = Post.find(params[:id]) 
+  end
 
-
-
+  def update
+    @post = Post.find(params[:id])
+    @post.update params.require(:post).permit(:video, :title, :text) # POINT
+    redirect_to @post
+  end
 end
+
+
+
