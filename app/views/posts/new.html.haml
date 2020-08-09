@@ -1,0 +1,12 @@
+%h1 New Post
+
+
+.contents.row
+  .container
+    = form_with(model: @post, local: true) do |form|
+      %h3
+        投稿する
+      = form.file_field	 :video, placeholder: ""
+      = form.text_field :title, placeholder: "title"
+      = form.text_area :text, placeholder: "text" , rows: "10"
+      = form.submit "SEND"
