@@ -8,25 +8,24 @@ class PostsController < ApplicationController
     @post = Post.new
   end
 
-  def create
-    @post = Post.create params.require(:post).permit(:video, :title, :text) # POINT
-    redirect_to @post
-  end
-
   def show
     @post = Post.find(params[:id])
   end
 
-  def edit
-    @post = Post.find(params[:id]) 
+  def create
+    @post = Post.create!(post_params)
+    redirect_to root_path
   end
 
-  def update
-    @post = Post.find(params[:id])
-    @post.update params.require(:post).permit(:video, :title, :text) # POINT
-    redirect_to @post
-  end
+  private
+    def post_params
+      params.require(:post).permit(:title, :text, :clip)
+    end
+
+
 end
+
+
 
 
 

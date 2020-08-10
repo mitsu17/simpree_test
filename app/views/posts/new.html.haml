@@ -5,7 +5,7 @@
   .form__container__field
     = form_with(model: @post, local: true) do |form|
 
-      = form.file_field	 :video, placeholder: "ファイルを選択する"
+      = form.file_field :clip, :accept => 'image/*', placeholder: "ファイルを選択する"
       = form.text_field :title, placeholder: "title"
       = form.text_area :text, placeholder: "text"
       = form.submit "SEND"
