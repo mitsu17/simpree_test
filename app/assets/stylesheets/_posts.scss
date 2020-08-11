@@ -21,8 +21,21 @@ header {
     &__image {
       width: 150px;
       height: 63px;
-      // display: block;
- 
+    }
+  }
+  .header__menu {
+    float: right;
+    &__icon {
+      display: flex;
+      margin: 30px 80px 0 0;
+      &__user {
+        width: 45px;
+      }
+      &__video {
+        width: 50px;
+        margin-top: 3px;
+        margin-left: 35px;
+      }
     }
   }
 }
@@ -31,15 +44,13 @@ header {
 main {
   width: 100vw;
   height: 100vh;
-  margin: 0 auto;
+
   padding: 0 10px;
   background-color: #F4F4F4;
-  padding-bottom: 20px;
-  
 }
 
 .grid {
-
+  margin: 0 auto;
   &__item {
     width: 300px;
     height: auto;

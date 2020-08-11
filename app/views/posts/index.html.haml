@@ -2,13 +2,20 @@
   %header
     .header__logo
       = link_to image_tag('simpree_logo_2_20200803.png', class: 'header__logo__image'), root_path
+    .header__menu
+      %ul.header__menu__icon
+        %li
+          = link_to image_tag('user_icon_3.png', class: 'header__menu__icon__user'), root_path
+        %li
+          = link_to image_tag('plus_icon_5.png', class: 'header__menu__icon__video'), new_post_path
+
+
   %main
     .grid
       - @posts.each do |post|
         .grid__item
-          = video_tag(url_for(post.clip), class: 'grid__item__image')
+          = link_to video_tag(url_for(post.clip), class: 'grid__item__image'), "/posts/#{post.id}", method: :get
           %h3= post.title 
-          %p= post.text
+          %p= simple_format(post.text)
           .grid__item__menuBtn
-            = image_tag 'menu_icon_4.png', class: 'grid__item__menuBtn__image'
-
+            =link_to image_tag('menu_icon_4.png', class: 'grid__item__menuBtn__image'), root_path
