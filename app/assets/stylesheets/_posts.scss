@@ -29,8 +29,13 @@ header {
 
 
 main {
+  width: 100vw;
+  height: 100vh;
   margin: 0 auto;
+  padding: 0 10px;
   background-color: #F4F4F4;
+  padding-bottom: 20px;
+  
 }
 
 .grid {

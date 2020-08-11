@@ -1,12 +1,4 @@
--# - if @post.image.attached?
--#   = image_tag @post.image
 
--# <div>
--# <%= = video_tag(url_for(@post.clip), style:'width:300px; height: auto;)'%>
--# </div>
-
--# %div
--#   = video_tag(url_for(@post.clip), style:'width:300px; height: auto;', controls:'')
 
 %div
   = video_tag(url_for(@post.clip), style:'width:300px; height: auto;', controls:'')
