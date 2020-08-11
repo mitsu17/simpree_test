@@ -1,0 +1,177 @@
+%body
+  %header
+    .header__logo
+      = link_to image_tag('simpree_logo_2_20200803.png', class: 'header__logo__image'), root_path
+  %main
+    .grid
+      .grid__item
+        - @posts.each do |post|
+          = video_tag(url_for(post.clip), class: 'grid__item__image')
+          %h3= post.title 
+          %p= post.text
+          .grid__item__menuBtn
+            = image_tag 'menu_icon_4.png', class: 'grid__item__menuBtn__image'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- @posts.each do |post|
+  = video_tag(url_for(post.clip))
+  = post.title
+  = post.text
+
+
+          = link_to video_tag(url_for(post.clip), class: 'grid__item__image')"/posts/#{post.id}", method: :get
+
+
+  %header
+    .header__logo
+      = link_to image_tag('simpree_logo_2_20200803.png', class: 'header__logo__image'), root_path
+  %main
+    .grid
+      - @posts.each do |post|
+        .grid__item
+          = video_tag(url_for(post.clip)), class: 'grid__item__image'
+          %h3= post.title 
+          %p= post.text
+          .grid__item__menuBtn
+            = image_tag 'menu_icon_4.png', class: 'grid__item__menuBtn__image'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  %body
+  %header
+    .header__logo
+      = link_to image_tag('simpree_logo_2_20200803.png', class: 'header__logo__image'), root_path
+  %main
+    .grid
+      .grid__item
+        = image_tag 'sample01.png', class: 'grid__item__image'
+        %h3 Logo Design for and recipe %bbbbbbbbbbb
+        %p Because the policy also takes into account commons-free rules, it is possible to have the plagiarism required by applicable law in the text of the work, the purpose of the license is to be able to take into account that it can be quoted and restricted in the media What.
+        .grid__item__menuBtn
+          = image_tag 'menu_icon_4.png', class: 'grid__item__menuBtn__image'
+      .grid__item
+        = image_tag 'sample02.png', class: 'grid__item__image'
+        %h3 Air on Behance
+        %p In addition, the copyright of the free copyright was exempted because of the same media and the exclusion of the requirement, which is clearly quoted in the main and servant citations granted by the policy. However, it is not the work of the authors who can distinguish and fulfill the views that are distinguished by the research authors
+        .grid__item__menuBtn
+          = image_tag 'menu_icon_4.png', class: 'grid__item__menuBtn__image'
+      .grid__item
+        = image_tag 'sample03.png', class: 'grid__item__image'
+        %h3 Vector fruit and berry
+        %p Because the policy also takes into account commons-free rules, it is possible to have the plagiarism required by applicable law in the text of the work, the purpose of the license is to be able to take into account that it can be quoted and restricted in the media What.
+        .grid__item__menuBtn
+          = image_tag 'menu_icon_4.png', class: 'grid__item__menuBtn__image'
+      .grid__item
+        = image_tag 'sample04.png', class: 'grid__item__image'
+        %h3 Brown Brown
+        %p In addition, the copyright of the free copyright was exempted because of the same media and the exclusion of the requirement, which is clearly quoted in the main and servant citations granted by the policy. However, it is not the work of the authors who can distinguish and fulfill the views that are distinguished by the research authors
+        .grid__item__menuBtn
+          = image_tag 'menu_icon_4.png', class: 'grid__item__menuBtn__image'   
+      .grid__item
+        = image_tag 'sample05.png', class: 'grid__item__image'
+        %h3 Cafe republic
+        %p Because the policy also takes into account commons-free rules, it is possible to have the plagiarism required by applicable law in the text of the work, the purpose of the license is to be able to take into account that it can be quoted and restricted in the media What.
+        .grid__item__menuBtn
+          = image_tag 'menu_icon_4.png', class: 'grid__item__menuBtn__image'         
+      .grid__item
+        = image_tag 'sample06.png', class: 'grid__item__image'
+        %h3 Works pinie design
+        %p In addition, the copyright of the free copyright was exempted because of the same media and the exclusion of the requirement, which is clearly quoted in the main and servant citations granted by the policy. However, it is not the work of the authors who can distinguish and fulfill the views that are distinguished by the research authors
+        .grid__item__menuBtn
+          = image_tag 'menu_icon_4.png', class: 'grid__item__menuBtn__image'   
+      .grid__item
+        = image_tag 'sample07.png', class: 'grid__item__image'
+        %h3 Cycle Park Tony
+        %p Because the policy also takes into account commons-free rules, it is possible to have the plagiarism required by applicable law in the text of the work, the purpose of the license is to be able to take into account that it can be quoted and restricted in the media What.
+        .grid__item__menuBtn
+          = image_tag 'menu_icon_4.png', class: 'grid__item__menuBtn__image'         
+      .grid__item
+        = image_tag 'sample08.png', class: 'grid__item__image'
+        %h3 Cycle Park Tony
+        %p Because the policy also takes into account commons-free rules, it is possible to have the plagiarism required by applicable law in the text of the work, the purpose of the license is to be able to take into account that it can be quoted and restricted in the media What.
+        .grid__item__menuBtn
+          = image_tag 'menu_icon_4.png', class: 'grid__item__menuBtn__image'         
+      .grid__item
+        = image_tag 'sample09.png', class: 'grid__item__image'
+        %h3 Vector raspberry seamless
+        %p In addition, the copyright of the free copyright was exempted because of the same media and the exclusion of the requirement, which is clearly quoted in the main and servant citations granted by the policy. However, it is not the work of the authors who can distinguish and fulfill the views that are distinguished by the research authors
+        .grid__item__menuBtn
+          = image_tag 'menu_icon_4.png', class: 'grid__item__menuBtn__image'         
+      .grid__item 
+        = image_tag 'sample10.png', class: 'grid__item__image'
+        %h3 Typography inspiration
+        %p Because the policy also takes into account commons-free rules, it is possible to have the plagiarism required by applicable law in the text of the work, the purpose of the license is to be able to take into account that it can be quoted and restricted in the media What.
+        .grid__item__menuBtn
+          = image_tag 'menu_icon_4.png', class: 'grid__item__menuBtn__image'         
+      .grid__item
+        = image_tag 'sample11.png', class: 'grid__item__image'
+        %h3 Artists if you need Art Work
+        %p In addition, the copyright of the free copyright was exempted because of the same media and the exclusion of the requirement, which is clearly quoted in the main and servant citations granted by the policy. However, it is not the work of the authors who can distinguish and fulfill the views that are distinguished by the research authors      
+        .grid__item__menuBtn
+          = image_tag 'menu_icon_4.png', class: 'grid__item__menuBtn__image'         
+      .grid__item
+        = image_tag 'sample12.jpg', class: 'grid__item__image'
+        %h3 Logo Design for and recipe
+        %p Because the policy also takes into account commons-free rules, it is possible to have the plagiarism required by applicable law in the text of the work, the purpose of the license is to be able to take into account that it can be quoted and restricted in the media What.      
+        .grid__item__menuBtn
+          = image_tag 'menu_icon_4.png', class: 'grid__item__menuBtn__image'         
+      .grid__item
+        = image_tag 'sample13.jpg', class: 'grid__item__image'
+        %h3 Air on Behance
+        %p In addition, the copyright of the free copyright was exempted because of the same media and the exclusion of the requirement, which is clearly quoted in the main and servant citations granted by the policy. However, it is not the work of the authors who can distinguish and fulfill the views that are distinguished by the research authors     
+        .grid__item__menuBtn
+          = image_tag 'menu_icon_4.png', class: 'grid__item__menuBtn__image'         
+      .grid__item
+        = image_tag 'sample14.jpg', class: 'grid__item__image'
+        %h3 Vector fruit and berry
+        %p Because the policy also takes into account commons-free rules, it is possible to have the plagiarism required by applicable law in the text of the work, the purpose of the license is to be able to take into account that it can be quoted and restricted in the media What.      
+        .grid__item__menuBtn
+          = image_tag 'menu_icon_4.png', class: 'grid__item__menuBtn__image'         
+      .grid__item
+        = image_tag '', class: ''
+        %h3 Brown Brown
+        %p In addition, the copyright of the free copyright was exempted because of the same media and the exclusion of the requirement, which is clearly quoted in the main and servant citations granted by the policy. However, it is not the work of the authors who can distinguish and fulfill the views that are distinguished by the research authors
+        .grid__item__menuBtn
+          = image_tag 'menu_icon_4.png', class: 'grid__item__menuBtn__image'         
+      .grid__item
+        = image_tag '', class: ''
+        %h3 Cafe republic
+        %p Because the policy also takes into account commons-free rules, it is possible to have the plagiarism required by applicable law in the text of the work, the purpose of the license is to be able to take into account that it can be quoted and restricted in the media What.
+        .grid__item__menuBtn
+          = image_tag 'menu_icon_4.png', class: 'grid__item__menuBtn__image'         
+      .grid__item
+        = image_tag '', class: ''
+        %h3 Works pinie design
+        %p In addition, the copyright of the free copyright was exempted because of the same media and the exclusion of the requirement, which is clearly quoted in the main and servant citations granted by the policy. However, it is not the work of the authors who can distinguish and fulfill the views that are distinguished by the research authors
+        .grid__item__menuBtn
+          = image_tag 'menu_icon_4.png', class: 'grid__item__menuBtn__image'         

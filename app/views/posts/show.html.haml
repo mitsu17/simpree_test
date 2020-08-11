@@ -1,0 +1,11 @@
+
+
+%div
+  = video_tag(url_for(@post.clip), style:'width:300px; height: auto;', controls:'')
+
+
+.postTitle
+  = @post.title
+.postText
+  = simple_format @post.text
+
