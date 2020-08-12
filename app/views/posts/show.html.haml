@@ -1,11 +1,22 @@
-
-
-%div
-  = video_tag(url_for(@post.clip), style:'width:300px; height: auto;', controls:'')
-
-
-.postTitle
-  = @post.title
-.postText
-  = simple_format @post.text
-
+%header
+  .header__logo
+    = link_to image_tag('simpree_logo_2_20200803.png', class: 'header__logo__image'), root_path
+  .header__menu
+    %ul.header__menu__icon
+      %li
+        = link_to image_tag('user_icon_3.png', class: 'header__menu__icon__user'), root_path
+      %li
+        = link_to image_tag('plus_icon_5.png', class: 'header__menu__icon__video'), new_post_path
+%main
+  .detail__post
+    .detail__post__clip
+      = video_tag(url_for(@post.clip), class: "detail__post__clip__video", controls:'')
+    .detail__post__title
+      = @post.title
+    .detail__post__text
+      = simple_format @post.text
+  .transition__btn
+    .transition__btn__edit
+      = link_to "Edit"
+    .transition__btn__delete
+      = link_to "Delete"
