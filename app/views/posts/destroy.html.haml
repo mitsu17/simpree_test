@@ -1,0 +1,16 @@
+%header
+  .header__logo
+    = link_to image_tag('simpree_logo_2_20200803.png', class: 'header__logo__image'), root_path
+  .header__menu
+    %ul.header__menu__icon
+      %li
+        = link_to image_tag('user_icon_3.png', class: 'header__menu__icon__user'), root_path
+      %li
+        = link_to image_tag('plus_icon_5.png', class: 'header__menu__icon__video'), new_post_path
+
+%main
+  .display__feild
+    = image_tag 'video_file_icon_1.png', class: 'display__feild__image'
+    %h3
+      Delete complete.
+    = link_to "Home", root_path, class: 'home__btn'
