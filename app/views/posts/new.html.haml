@@ -7,17 +7,17 @@
         = link_to image_tag('user_icon_3.png', class: 'header__menu__icon__user'), root_path
       %li
         = link_to image_tag('plus_icon_5.png', class: 'header__menu__icon__video'), new_post_path
-
-.newPost__container
-  .newPost__container__title
-    %h1 New Post
-  .newPost__container__form
-    .newPost__container__form__field
-      = form_with(model: @post, local: true) do |form|
-        = form.label :clip, class: :newPost__container__form__field__clipArea do
-          = image_tag "video_file_icon_2.png", class: :clipImage
-          = form.file_field :clip, :accept => 'video/*', class: :newPost__container__form__field__clip
-        = form.text_field :title, placeholder: "title", class: :newPost__container__form__field__title
-        = form.text_area :text, placeholder: "text", class: :newPost__container__form__field__text
-        = form.text_field :category, placeholder: "category", class: :newPost__container__form__field__category
-        = form.submit "Send", class: :newPost__container__form__field__btn
+%main
+  .newPost__container
+    .newPost__container__title
+      %h1 New Post
+    .newPost__container__form
+      .newPost__container__form__field
+        = form_with(model: @post, local: true) do |form|
+          = form.label :clip, class: :newPost__container__form__field__clipArea do
+            = image_tag "video_file_icon_2.png", class: :clipImage
+            = form.file_field :clip, :accept => 'video/*', class: :newPost__container__form__field__clip
+          = form.text_field :title, placeholder: "title", class: :newPost__container__form__field__title
+          = form.text_area :text, placeholder: "text", class: :newPost__container__form__field__text
+          = form.text_field :category, placeholder: "category", class: :newPost__container__form__field__category
+          = form.submit "Send", class: :newPost__container__form__field__btn
