@@ -1,47 +1,12 @@
-%header
-  .header__logo
-    = link_to image_tag('simpree_logo_2_20200803.png', class: 'header__logo__image'), root_path
+.index-container
   
-  .header__searchBox
-  %form.header__searchBox__form
-    %input.header__searchBox__form__textBox{:placeholder => "キーワードから探す", :type => "text"}/
-    %input.header__searchBox__form__submitBtn
- 
-  .header__menu
-    %ul.header__menu__icon
-      %li
-        = link_to image_tag('user_icon_3.png', class: 'header__menu__icon__user'), root_path
-      %li
-        = link_to image_tag('plus_icon_5.png', class: 'header__menu__icon__video'), new_post_path
-
-
-%main
-  .post-contents
-    .grid
-      - @posts.each do |post|
-        .grid__item
-          = link_to video_tag(url_for(post.clip), class: 'grid__item__image'), post_path(post.id), method: :get
-          .grid__item__title
-            %h3= post.title 
-          .grid__item__menuBtn
-            =link_to 'edit', edit_post_path(post.id) , class: 'grid__item__menuBtn__text', method: :get
-
-  -# %section.product-list
-  -#   .product-list-contents
-  -#     %h2.product-list-contents__title 新着アイテム
-  -#     .product-list-contents__grid
-  -#       - @product.each do |product|
-  -#         = link_to product_path(product.id), class: "product-box__link", method: :get do
-  -#           .product
-  -#             - if product.buyer_id.present?
-  -#               .product__price-sold
-  -#                 .product__price-sold__inner
-  -#                   SOLD
-  -#             = image_tag "#{product.images[0].image}", class: 'product__img'     
-  -#             %span.product__price 
-  -#               = "¥ #{product.price.to_s(:delimited)}"
-  -#             .product__name 
-  -#               %p 
-  -#                 = product.name
-  -#             %span.product__icon ♡ 0bu
-  -#       %end
+  .index-contens
+    .logo-area
+      = image_tag('simpree_logo_2_20200803.png', class: 'logo-area__image')
+    .text-area 
+      %h3 簡単に自由に!!
+      %p iPhoneなどで撮った動画や<br>スクショ動画を投稿して<br>あなたの発想で<br>使い方いろいろ
+    .link-area
+      = link_to "ログイン", new_user_session_path, class: "login-link"
+      %p /
+      = link_to "サインアップ", new_user_registration_path, class: "sign-up-link"
