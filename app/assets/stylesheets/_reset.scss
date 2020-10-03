@@ -2,9 +2,10 @@
 	TODO will need to remove settings on HTML since we can't namespace it.
 	TODO with the prefix, should I group by selector or property for weight savings?
 */
-html{
-	color:#000;
-	background:#FFF;
+html, body{
+	width: 100%;
+	height: 100%;
+	background-color: #F4F4F4;
 }
 /*
 	TODO remove settings on BODY since we can't namespace it.
@@ -13,6 +14,7 @@ html{
 	TODO test putting a class on HEAD.
 		- Fails on FF.
 */
+
 body,
 div,
 dl,
