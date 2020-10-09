@@ -31,6 +31,7 @@
 詳しくは下記URLへ<br>
 https://railsguides.jp/active_storage_overview.html
 
+※ロゴはAdobe illustratorで自作しました。
 ## 使用技術(開発環境)<br>
 ・Ruby 2.6.6<br>
 ・Rails  5.2.3<br>
