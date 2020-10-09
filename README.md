@@ -16,13 +16,13 @@
 
 ## DEMO
 マイページ（動画投稿一覧、例：スケートボードの技ごとに投稿）
-
+<img width="1083" alt="スクリーンショット 2020-10-10 8 29 11" src="https://user-images.githubusercontent.com/66157250/95639255-ba4dc180-0ad2-11eb-8b61-0af96f64fa0e.png">
 
 新規投稿ページ
-
+<img width="1089" alt="スクリーンショット 2020-10-10 8 34 25" src="https://user-images.githubusercontent.com/66157250/95639449-70191000-0ad3-11eb-9163-89a4d18cb82d.png">
 
 詳細ページ
-
+<img width="1089" alt="スクリーンショット 2020-10-10 8 33 48" src="https://user-images.githubusercontent.com/66157250/95639430-5c6da980-0ad3-11eb-999c-688d67699452.png">
 
 
 ## 工夫したポイント
