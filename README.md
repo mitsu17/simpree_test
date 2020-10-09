@@ -16,9 +16,7 @@
 
 ## 工夫したポイント
 自由な発想でいろいろな使い方をしていただきたいので、出来る限り簡単な操作でアイコンを多用しViewもシンプルに致しました。
-
-
-
+またActive Storageという機能に興味があったので、動画投稿機能の実装にて使用致しました。
 
 ## 使用技術(開発環境)<br>
 ・Ruby 2.6.6<br>
@@ -36,3 +34,25 @@
 ・投稿数が多くなった際にどのように投稿したものを管理するかが課題でもあります。
 
 ## DB設計
+## postsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|title|string|null: false|
+|text|text|null: false|
+|user_id|integer|null: false|
+
+### Association
+- belongs_to :user
+- has_one_attached :clip
+## usersテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|nickname|string|null: false|
+|email|string|null: false|
+|encrypted_password|string|null: false|
+
+### Association
+- has_many :posts
+
