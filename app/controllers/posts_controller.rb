@@ -3,7 +3,7 @@ class PostsController < ApplicationController
 
 
   def index
-    @posts = Post.includes(:user).order("created_at DESC")
+    @posts = Post.includes(:user).order("created_at: :desc")
   end
 
   def new 
@@ -20,7 +20,12 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.create(post_params)
-    redirect_to user_path(current_user.id)
+    if @post.save
+      redirect_to user_path(current_user.id) #成功の場合
+    else        
+      render 'new' #失敗の場合 
+    end
+    # redirect_to user_path(current_user.id)
   end
   
   def edit
